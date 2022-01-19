@@ -856,18 +856,6 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
   display: block;
 }
 
-.arrow {
-  width: 0;
-  height: 0;
-  border-top: 10px solid #e6e6e6;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  position: absolute;
-  right: 15px;
-  top: 6px;
-  z-index: 100;
-}
-
 .menu li {
   position: relative;
 }
@@ -1067,15 +1055,17 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
   margin-bottom: 70px;
 }
 
+.act {
+  background: #0075FF !important;
+  color: #fff !important;
+}
+
 .rere {
   overflow-x: auto;
 }
 
-.tabs {
-  width: 1170px;
-}
-
 .tabs__items {
+  width: 1170px;
   display: flex;
 }
 
@@ -1087,6 +1077,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
   height: 95px;
   line-height: 95px;
   display: block;
+  color: #000;
 }
 
 .tabs__item:first-child {
@@ -1105,7 +1096,7 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 34px;
+  padding-top: 34px;
   font-size: 16px;
   line-height: 142.5%;
   display: none;
@@ -1116,9 +1107,10 @@ body.mouse .sub-menu__list > li:hover .sub-sub-menu__list {
 }
 
 .no-webp .block-main{
-  background: url(../img/bgb.png) no-repeat; }
+  background-image: url(../img/bgb.png); }
 
 .block-main {
+  background-repeat: no-repeat;
   background-position: 101%;
   background-size: auto 100%;
   margin-top: 76px;
@@ -1912,7 +1904,7 @@ td:nth-child(8) > a {
   }
 
   .block-main {
-    background: none;
+    background-image: none !important;
     padding-bottom: 20px;
   }
 
@@ -1994,7 +1986,7 @@ td:nth-child(8) > a {
   }
 
   .block-stock__left {
-    background: none;
+    background: none !important;
     width: 100%;
     padding-left: 0;
   }
@@ -2029,7 +2021,7 @@ td:nth-child(8) > a {
   }
 
   .block-stock__right {
-    background: none;
+    background: none !important;
   }
 
   .block-stock__button {
@@ -2341,7 +2333,7 @@ td:nth-child(8) > a {
 
 .webp .slick-arrow.slick-next{ background: #0075ff url(../img/sn.webp) no-repeat center; }
 
-.webp .block-main{ background: url(../img/bgb.webp) no-repeat; }
+.webp .block-main{ background-image: url(../img/bgb.webp); }
 
 .webp .course__column__hidden{ background: #f7f7f7 url(../img/filtr.webp) no-repeat center right 20px; }
 
